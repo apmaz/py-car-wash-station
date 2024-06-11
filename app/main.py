@@ -25,7 +25,7 @@ class CarWashStation:
         self.average_rating = average_rating
         self.count_of_ratings = count_of_ratings
 
-    def serve_cars(self, list_of_cars: list) -> float:
+    def serve_cars(self, list_of_cars: list[Car]) -> float:
         total_cost = 0
         for car in list_of_cars:
             if self.clean_power >= car.clean_mark:
